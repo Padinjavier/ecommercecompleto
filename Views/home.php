@@ -1,4 +1,5 @@
 <?php 
+//home
 	headerTienda($data);
 	$arrSlider = $data['slider'];
 	$arrBanner = $data['banner'];
@@ -15,7 +16,6 @@
 		<div class="wrap-slick1">
 			<div class="slick1">
 			<?php 
-			
 			for ($i=0; $i < count($arrSlider) ; $i++) { 
 				$ruta = $arrSlider[$i]['ruta'];
 			 ?>
