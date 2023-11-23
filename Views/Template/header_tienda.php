@@ -145,7 +145,6 @@
 
 					<!-- Menu desktop -->
 					<div class="menu-desktop">
-						
 						<ul class="main-menu">
 							<li class="active-menu">
 								<a href="<?= base_url(); ?>">Inicio</a>
