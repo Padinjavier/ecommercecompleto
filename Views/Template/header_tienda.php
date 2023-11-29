@@ -161,9 +161,9 @@
 								<a href="<?= base_url(); ?>/nosotros">Nosotro</a>
 							</li>
 
-							<li>
+							<!-- <li>
 								<a href="<?= base_url(); ?>/sucursales">Sucursales</a>
-							</li>
+							</li> -->
 
 							<li>
 								<a href="<?= base_url(); ?>/contacto">Contacto</a>
