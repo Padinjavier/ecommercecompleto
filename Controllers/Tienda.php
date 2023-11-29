@@ -471,6 +471,7 @@
 				//dep($_POST);
 				$nombre = ucwords(strtolower(strClean($_POST['nombreContacto'])));
 				$email  = strtolower(strClean($_POST['emailContacto']));
+				$telefono  = strClean($_POST['telefono']);
 				$mensaje  = strClean($_POST['mensaje']);
 				$useragent = $_SERVER['HTTP_USER_AGENT'];
 				$ip        = $_SERVER['REMOTE_ADDR'];
@@ -486,7 +487,7 @@
 					$dispositivo = "iPad";
 				}
 
-				$userContact = $this->setContacto($nombre,$email,$mensaje,$ip,$dispositivo,$useragent);
+				$userContact = $this->setContacto($nombre,$email,$telefono,$mensaje,$ip,$dispositivo,$useragent);
 				if($userContact > 0){
 					$arrResponse = array('status' => true, 'msg' => "Su mensaje fue enviado correctamente.");
 					//Enviar correo
@@ -494,6 +495,7 @@
 										'email' => EMAIL_CONTACTO,
 										'nombreContacto' => $nombre,
 										'emailContacto' => $email,
+										'telefonoContacto' => $telefono,
 										'mensaje' => $mensaje );
 					sendEmail($dataUsuario,"email_contacto");
 				}else{

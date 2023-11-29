@@ -13,6 +13,7 @@ tableContactos = $('#tableContactos').dataTable( {
         {"data":"id"},
         {"data":"nombre"},
         {"data":"email"},
+        {"data":"telefono"},
         {"data":"fecha"},
         {"data":"options"}
     ],
@@ -62,6 +63,7 @@ function fntViewInfo(idmensaje){
                 let objMesaje = objData.data;
                 document.querySelector("#celCodigo").innerHTML = objMesaje.id;
                 document.querySelector("#celNombre").innerHTML = objMesaje.nombre;
+                document.querySelector("#celTelefono").innerHTML = objMesaje.telefono;
                 document.querySelector("#celEmail").innerHTML = objMesaje.email;
                 document.querySelector("#celFecha").innerHTML = objMesaje.fecha;
                 document.querySelector("#celMensaje").innerHTML = objMesaje.mensaje;

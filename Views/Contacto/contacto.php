@@ -34,7 +34,12 @@ $idpagina = $data['page']['idpost'];
 
 					<div class="bor8 m-b-20 how-pos4-parent">
 						<input class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="text" id="emailContacto" name="emailContacto" placeholder="Correo electrónico">
-						<img class="how-pos4 pointer-none" src="<?= media() ?>/tienda/images/icons/icon-email.png" alt="ICON">
+						<img class="how-pos4 pointer-none" src="<?= media() ?>/tienda/images/icons/icon-email.png" alt="ICON" style="width: 28px;">
+					</div>
+
+					<div class="bor8 m-b-20 how-pos4-parent">
+						<input class="stext-111 cl2 plh3 size-116 p-l-62 p-r-30" type="text" id="telefonoContacto" name="telefonoContacto" placeholder="Teléfono">
+						<img class="how-pos4 pointer-none" src="<?= media() ?>/tienda/images/icons/icon-telefono.png" alt="ICON" style="width: 28px;">
 					</div>
 
 					<div class="bor8 m-b-30">
