@@ -3,14 +3,20 @@
 	$parts = explode(" ", $server_info);
 	$computer_name = $parts[1];
 	$computer_name = gethostname();
-
-	$expected_namexavi = "DESKTOP-XAVI661";//jpadin
-	$expected_namenetis = "DESKTOP-";//jluyo
-	// prueba alex adios
-	// prueba alex holaa
+// hola
+	$nameserver ="charlie.icaserver.net";//server
+	$expected_namexavi = "DESKTOP-XAVI661";//xavi
+	$expected_namexavit = "DESKTOP-Q9HP1U1";//xavi
+	$expected_namenetis = "DESKTOP-";//netis
 	$expected_namealex = "DESKTOP-Q3PK5AH";//ahuasasquiche
-
-	if ($computer_name == $expected_namexavi) {
+//aaaaaaaaaaaaaaaaaaaaaaaaaaa
+	if ($computer_name == $nameserver) {
+		define('BASE_URL', 'https://system32.shop');
+		define('DB_NAME', 'system32_ecommerce');
+		define('DB_USER', 'system32_xavi');
+		define('DB_PASSWORD', 'xavi661xavi');
+	}
+	if ($computer_name == $expected_namexavi || $computer_name == $expected_namexavit) {
 
 		define('BASE_URL', 'http://localhost/ecommercecompleto');
 		
